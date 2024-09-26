@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Discussion Portal</h1>
+    </nav>
+    <div class="container">
+        <div class="left-pane">
+            <input type="text" id="search-bar" placeholder="Find questions..." aria-label="Search bar">
+            <div id="question-list" aria-live="polite">
+                <div class="question-box">
+                    <strong>How to implement a binary search algorithm?</strong>
+                    <p>Can someone explain the steps to implement a binary search algorithm in Python?</p>
+                </div>
+                <div class="question-box">
+                    <strong>What is the difference between HTTP and HTTPS?</strong>
+                    <p>Why is HTTPS considered more secure than HTTP?</p>
+                </div>
+            </div>
+        </div>
+        <div class="right-pane" id="question-form">
+            <h2>Ask a Question</h2>
+            <form id="new-question-form">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required aria-required="true">
+                <label for="question">Question:</label>
+                <textarea id="question" name="question" required aria-required="true"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
